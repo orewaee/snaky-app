@@ -1,0 +1,9 @@
+.items {
+    width: calc(100% - 48px);
+
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    
+    margin: 24px;
+}

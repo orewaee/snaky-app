@@ -1,0 +1,25 @@
+.notification {
+    position: fixed;
+
+    bottom: 24px;
+    left: 24px;
+
+    background-color: var(--BG-500);
+
+    border: 2px solid var(--BG-400);
+    border-radius: 24px;
+
+    user-select: none;
+
+    cursor: pointer;
+
+    transition: 120ms ease;
+
+    padding: 12px 24px;
+
+    &.inactive {
+        transform: translateX(-114px - 24px);
+
+        opacity: 0;
+    }
+}

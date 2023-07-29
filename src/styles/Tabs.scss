@@ -1,0 +1,19 @@
+.tabs {
+    position: sticky;
+
+    top: 24px;
+
+    width: calc(100% - 24px * 2);
+
+    display: flex;
+    gap: 24px;
+
+    background-color: rbga(0, 0, 0, .48);
+    backdrop-filter: blur(12px);
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    margin: 24px;
+}

@@ -1,0 +1,54 @@
+@font-face {
+    font-family: "consolas";
+    src: url("./assets/consolas.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar {
+    width: 2px;
+}
+  
+::-webkit-scrollbar-track {
+    background: var(--BG-500);
+}
+  
+::-webkit-scrollbar-thumb {
+    background-color: var(--ACCENT);
+}
+
+body {
+    --ACCENT: #16D886;
+
+    --BG-500: #000;
+    --BG-400: #0A0B0A;
+    --BG-300: #0F100F;
+    --BG-200: #131514;
+    --BG-100: #272A29;
+
+    --FG-500: #F4F5F5;
+    --FG-400: #E4E7E6;
+    --FG-300: #D4D8D7;
+    --FG-200: #C4CAC7;
+    --FG-100: #B4BBB8;
+
+    background-color: var(--BG-500);
+
+    color: var(--FG-500);
+    
+    font: {
+        family: "consolas";
+        size: 16px;
+    }
+
+    line-height: 24px;
+
+    ::selection {
+        color: var(--BG-500);
+
+        background-color: var(--ACCENT);
+    }
+}
