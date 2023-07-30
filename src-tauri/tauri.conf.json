@@ -19,6 +19,25 @@
             },
             "clipboard": {
                 "writeText": true
+            },
+            "fs": {
+                "all": true,
+                "copyFile": false,
+                "createDir": true,
+                "exists": true,
+                "readDir": true,
+                "readFile": true,
+                "removeDir": false,
+                "removeFile": false,
+                "renameFile": false,
+                "scope": [
+                    "$DOCUMENT/*",
+                    "$DOCUMENT/snaky/*"
+                ],
+                "writeFile": true
+            },
+            "path": {
+                "all": true
             }
         },
         "bundle": {
