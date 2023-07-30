@@ -12,6 +12,7 @@ import "../styles/App.scss";
 import { readTextFile, exists, BaseDirectory, createDir, writeTextFile } from "@tauri-apps/api/fs";
 
 import Item from "../types/Item";
+import NoPasswords from "./NoPasswords";
 
 export default function App() {
     const [statusState, setStatusState] = useRecoilState(statusStateAtom);
@@ -50,7 +51,7 @@ export default function App() {
 
     return <>
         <Tabs />
-        <Items items={itemsState} />
+        {itemsState.length != 0 ? <Items items={itemsState} /> : <NoPasswords />}
         <Notification status={statusState} onClick={hide}>
             Copied!
         </Notification>
