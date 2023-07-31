@@ -4,21 +4,23 @@ Lightweight local password manager. Snaky only provides a convenient interface f
 
 
 ### Configuration
-Schematic of the password file (located in `documents/snaky/snaky.json`)
-```json
-[
-	{
-		"link": "",
-        "name": "",
-        "password": ""
-	},
-	
-	...
 
-	{
-		"link": "",
-        "name": "",
-        "password": ""
-	}
+Schematic of the password file (located in `documents/snaky/snaky.json`)
+
+```
+[
+    {
+        "link": "",
+        "name": "",
+        "password": "",
+    },
+
+    ...
+
+    {
+        "link": "",
+        "name": "",
+        "password": "",
+    }
 ]
 ```
